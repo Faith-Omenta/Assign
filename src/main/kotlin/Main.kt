@@ -28,6 +28,17 @@ fun greetings(){
     println(subract(786,543))
 
     fact("I love my family")
+
+    var X=text("Melvin",25)
+    println(X)
+
+    var s=text("Faith")
+    var z=text ("Glenah")
+
+    students("Vinny","Robin","Riaga","chris")
+
+    cities()
+
 }
 //VARIABLES AND DATATYPE
 //You are creating an app to capture student records. Some of the data you will
@@ -63,3 +74,25 @@ fun subract(num8:Int,num9:Int):Int{
 fun fact(sentence:String){
     println(sentence)
 }
+fun text(name:String,years:Int):String{
+    var text="Hi! my name is $name and i am $years years old"
+    return text
+}
+fun text(name:String){
+    var names="Faith"
+    if(name.equals(names)){
+        println("That's me!")
+    }else{
+        println("I don't know who that is")
+    }
+}
+fun students(name1:String,name2:String,name3:String,name4:String){
+    println(arrayOf(name1,name2,name3,name4).contentToString())
+}
+fun cities(){
+    var cities=arrayOf("kenya","uganda","tanzania","rwanda")
+    for(city in cities){
+        println(city.capitalize())
+    }
+}
+
